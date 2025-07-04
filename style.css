@@ -1,0 +1,291 @@
+  * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+      }
+      .main {
+        background-image: url(assets/images/bg.jpg);
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: max(1200px, 100vw);
+      }
+
+      .main .box {
+        height: 70vh;
+        width: 100%;
+        opacity: 0.64;
+        background-color: black;
+        position: absolute;
+        top: 0;
+      }
+      .logo img {
+        width: 120px;
+        position: relative;
+        z-index: 10;
+      }
+
+      nav button {
+        position: relative;
+        z-index: 10;
+        padding: 7px;
+        margin: 6px;
+        border-radius: 5px;
+        border-color: black;
+        cursor: pointer;
+      }
+      nav div .englishbtn {
+        text-align: center;
+        background: transparent;
+        color: white;
+        width: 120px;
+        font-size: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.408);
+      }
+      nav div .second {
+        background-color: red;
+        color: white;
+        border: none;
+        width: 80px;
+        font-size: 1rem;
+      }
+      .main nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+        margin: auto;
+        height: 70px;
+      }
+      @media screen and (min-width:1500px) {
+        .main nav{
+            justify-content: space-around;
+        }
+
+
+      }
+      .hero {
+        height: calc(100% - 70px);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        position: relative;
+        text-align: center;
+        margin: 0;
+      }
+      .hero span {
+        padding: 2px;
+      }
+      .bold {
+        font-size: 2.3rem;
+        width: 400px;
+        text-align: center;
+        font-weight: bolder;
+      }
+      .seperation {
+        height: 5px;
+        background-color: rgba(128, 128, 128, 0.369);
+        position: relative;
+        z-index: 20;
+      }
+      .hero .emailinput {
+        height: 40px;
+        padding: 3px;
+        width: 280px;
+        background-color: black;
+        color: white;
+        border-style: none;
+        border: 1px solid rgba(255, 255, 255, 0.493);
+      }
+      .btn {
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding: 3px;
+        margin-left: 2px;
+        margin-bottom: 3px;
+        text-align: center;
+        font-size: large;
+        height: 52px;
+        width: 170px;
+      }
+      .hero2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        position: relative;
+        z-index: 10;
+      }
+      .hero .first {
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        max-width: 70vw;
+      }
+      .firstsection {
+        display: flex;
+        gap: 8px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* flex-wrap: wrap; */
+      }
+      @media  screen and (max-width:1000px) {
+    
+        .sections{
+            flex-wrap: wrap;
+        }
+        .secImg img {
+        width: 310px;
+      }
+      .secImg video {
+        
+        width: 310px;
+      }.main nav {
+        width: 100vw;
+      }
+      .hero .emailinput {
+       
+        max-width: 200px;
+      }
+      .btn{
+        max-width: 150px;
+      }
+      .hero2{
+        gap: 12px;
+      }
+
+      
+
+    }
+      @media  screen and (max-width:401px) {
+    
+        .sections{
+            flex-wrap: wrap;
+        }
+        .secImg img {
+        width: 250px;
+      }
+      .secImg video {
+        
+        width: 250px;
+      }
+      
+
+      }
+      .secImg {
+        position: relative;
+      }
+      .secImg img {
+        width: 555px;
+        position: relative;
+        z-index: 10;
+      }
+      .secImg video {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 555px;
+      }
+      
+      .write {
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 33px 0;
+      }
+      .write:first-child {
+        font-weight: bolder;
+      }
+      .secondsection {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .thirdsection {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+      }
+      .fourthsection {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+      }
+      .faq {
+        padding: 34px;
+        background: black;
+        color: white;
+      }
+      .faq h1 {
+        padding: 2px;
+        margin: 4px;
+        text-align: center;
+      }
+      .faqbox svg {
+        filter: invert(1);
+      }
+      .faqbox {
+        display: flex;
+        color: white;
+        background-color: rgba(128, 128, 128, 0.796);
+        padding: 22px;
+        max-width: 60vw;
+        margin: 20px auto;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all 0.51s ease-out;
+      }
+
+      .faqbox:hover {
+        color: white;
+        background-color: rgba(128, 128, 128, 0.281);
+      }
+      footer{
+        color: white;
+        max-width: 60vw;
+        margin: auto;
+        padding: 5px;
+      }
+      footer .questions{
+        padding: 34px 0px;
+      }
+      .footer a{
+        color: white;
+        font-size: 14px;
+
+      }
+      .footer {
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      }
+      @media only screen and (max-width:1500px) {
+       .footer {
+        grid-template-columns: 1fr 1fr;
+      }
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 20px;
+        padding: 23px;
+      }
